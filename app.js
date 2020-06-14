@@ -487,3 +487,299 @@ if (parseInt(integer1) > parseInt(integer2)) {
 if (parseInt(integer1) === parseInt(integer2)) {
     alert("Number 1 and number 2 are equal");
 }
+
+//Q # 3
+var numCheck = prompt("Enter a number to check wheteher it is positive, negative or zero");
+if (numCheck === 0) {
+    alert("The entered number is zero");
+}
+if (numCheck < 0) {
+    alert("The entered number is negative");
+}
+if (numCheck > 0) {
+    alert("The entered number is positive");
+}
+
+//Q # 4
+var ch = prompt("Enter a character to check whether it's vowel or consonent :");
+if ((ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') || (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')) {
+    alert("True, entered character is Vowel");
+} else {
+    alert("False,entered character is not vowel");
+}
+//Q # 5
+var pwd = "js1999";
+var inputPassword = prompt("Enter your password");
+if (inputPassword == "") {
+    alert("Please Enter Your Password");
+} else if (inputPassword === pwd) {
+    alert("Correct! The password you entered matches the original password");
+} else {
+    alert("Incorrect password")
+}
+
+//Q # 6
+var greeting;
+var hour = 13;
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+alert(greeting);
+
+//Q # 7
+var userTime = prompt("Enter a time in 24 hour clock format. Like: 1900 = 7pm");
+if (userTime >= 0000 && userTime < 1200) {
+    alert("Good Morning!");
+} else if (userTime >= 1200 && userTime < 1700) {
+    alert("Good Afternoon!");
+} else if (userTime >= 1700 && userTime < 2100) {
+    alert("Good Evening!");
+} else if (userTime >= 2100 && userTime <= 2359) {
+    alert("Good Night!");
+} else {
+    alert("Enter a valid time.");
+}
+
+/* -------------Chapter no 14-16--------------- */
+
+//Q # 1
+var stdNames = [];
+
+//Q # 2
+var studNames = new Array();
+
+//Q # 3
+var food = ["Biryani", "Tikka", "Pulao", "Kunna"];
+
+//Q # 4
+var nums = [1, 2, 3, 4, 5];
+
+//Q # 5
+var boolArray = [true, false];
+
+//Q # 6
+var mixedArray = ["Imran Khan", 18, true];
+
+//Q # 7
+document.write("<br/><br/>")
+var qualificationInPak = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];
+document.write("Qualifications:<br />");
+for (var i = 0; i < qualificationInPak.length; i++) {
+    document.write((i + 1) + ") " + qualificationInPak[i] + "<br/>");
+}
+
+//Q # 8
+var studentsName = ["Imran", "Nawaz", "Hassan"];
+var studentsScore = [480, 230, 320];
+var totalsMarks = 500;
+document.write("<br /><br />");
+for (var i = 0; i < studentsName.length; i++) {
+    document.write("Score of ".concat(studentsName[i], " is ", studentsScore[i], ". Percentage: ", (studentsScore[i] / 500) * 100, "%<br/>"));
+}
+
+//Q # 9
+document.write("<br/><br/>");
+var color = ["Red", "Yellow", "Blue", "Green", "White", "Black"];
+document.write(color + "<br/>");
+var beginning = prompt("Enter which color you want to add at the beginning of array")
+color.unshift(beginning)
+document.write(color + "<br/>");
+var ending = prompt("Enter which color you want to add at the ending of array")
+color.push(ending)
+document.write(color + "<br/>");
+color.shift()
+document.write(color + "<br/>");
+color.pop()
+document.write(color + "<br/>");
+var update = +prompt("At which index do you want to add color?")
+var newColor = +prompt(" which color do you want to add on that index?")
+color.splice(update, 0, newColor)
+document.write(color + "<br/>");
+var dlete = +prompt("At which index do you want to delete color?")
+var colorDelete = +prompt(" which color do you want to delete on that index?")
+color.splice(dlete, colorDelete);
+document.write(color + "<br/>");
+
+//Q # 10
+document.write("<br/><br/>");
+var stdScore = [320, 230, 480, 120];
+stdScore.sort();
+for (i = 0; i < stdScore.length; i++) {
+    document.write(stdScore[i] + "<br/>");
+}
+
+//Q # 11
+document.write("<br/><br/>");
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+document.write("Cities List: <br/>" + cities + "<br/>")
+var selectedCities = cities.slice(2, 4)
+document.write("Selected Cities List: <br/>" + selectedCities);
+
+//Q # 12
+document.write("<br/><br/>");
+var arr = ["This", "is", "my", "cat"];
+document.write("Array: <br/>" + arr + "<br/>")
+document.write("<br/>");
+var join = arr.join(" ")
+document.write("String: <br/>" + join)
+
+//Q # 13
+document.write("<br/><br/>");
+var animals = ["Elephant", "Lion", "Tiger", "Girrafe"];
+document.write("Animals : <br/>" + animals + "<br/>");
+var firstAnimal = animals.shift();
+document.write("out : <br/>" + firstAnimal + "<br/>");
+var secondAnimal = animals.shift();
+document.write("Out : <br/>" + secondAnimal + "<br/>");
+var thirdAnimal = animals.shift();
+document.write("Out : <br/>" + thirdAnimal + "<br/>");
+var fourthAnimal = animals.shift();
+document.write("Out : <br/>" + fourthAnimal + "<br/>");
+
+//Q # 14
+document.write("<br/><br/>");
+var animals = ["Elephant", "Lion", "Tiger", "Girrafe"];
+document.write("Animals : <br/>" + animals + "<br/>");
+var firstAnimal = animals.pop();
+document.write("out : <br/>" + firstAnimal + "<br/>");
+var secondAnimal = animals.pop();
+document.write("Out : <br/>" + secondAnimal + "<br/>");
+var thirdAnimal = animals.pop()
+document.write("Out : <br/>" + thirdAnimal + "<br/>");
+var fourthAnimal = animals.pop();
+document.write("Out : <br/>" + fourthAnimal + "<br/>");
+
+//Q # 15
+document.write("<br/><br/>");
+var phoneBrands = ["Apple", "Samsung", "Motorla", "Nokia", "Sony", "Haier"];
+document.write(
+    "<select>" +
+    "<option>" + phoneBrands[0] + "</option>" +
+    "<option>" + phoneBrands[1] + "</option>" +
+    "<option>" + phoneBrands[2] + "</option>" +
+    "<option>" + phoneBrands[3] + "</option>" +
+    "<option>" + phoneBrands[4] + "</option>" +
+    "<option>" + phoneBrands[5] + "</option>" +
+    "</select>"
+);
+
+/* -------------Chapter no 17-20--------------- */
+
+//Q # 1
+var multiArray = [
+    [],
+    [],
+    []
+];
+
+//Q # 2
+document.write("<br/><br/>");
+multiArray[0] = [0, 1, 2, 3]
+multiArray[1] = [1, 0, 1, 2]
+multiArray[2] = [2, 1, 0, 1]
+document.write(multiArray[0] + "<br/>" + multiArray[1] + "<br/>" + multiArray[2] + "<br/>");
+
+//Q # 3
+document.write("<br/><br/>");
+for (var i = 1; i <= 10; i++) {
+    document.write(i + "<br/>");
+}
+
+
+//Q # 4
+document.write("<br/><br/>");
+var tab = prompt("Enter a number to generate multiplication table:");
+var range = prompt("Enter till where u want to generate multiplication table:");
+document.write("Multiplication Table of: " + tab);
+document.write("<br/>");
+document.write("length: " + range);
+document.write("<br/>");
+for (var k = 1; k <= parseInt(range); k++) {
+    document.write("<br/>" + parseInt(tab) + " x " + k + " = " + parseInt(tab) * k);
+}
+
+//Q # 5
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+document.write("<br/><br/>");
+for (var i = 0; i < fruits.length; i++) {
+    document.write(fruits[i] + "<br />")
+}
+document.write("<br />");
+for (var i = 0; i < fruits.length; i++) {
+    document.write("Element at index " + i + " is " + fruits[i] + "<br/>");
+}
+
+//Q # 6
+document.write("<br/><br/>");
+var num = [];
+var odd = [];
+var even = [];
+var series = [];
+
+for (var i = 0; i <= 15; i++) {
+    num[i] = i + 1;
+}
+document.write("counting :" + num + "<br/>");
+document.write(" Reverse counting :" + num.reverse() + "<br/>");
+
+for (var a = 1; a <= 20; a++) {
+    if (a % 2 !== 0) {
+        even[a] = a;
+    }
+}
+document.write("Even :" + even + "<br/>");
+for (var b = 1; b <= 20; b++) {
+    if (b % 2 === 0) {
+        odd[b] = b;
+    }
+}
+document.write("Odd :" + odd + "<br/>");
+for (var d = 1; d <= 20; d++) {
+    if (d % 2 === 0) {
+        series[d] = d + "k";
+    }
+}
+document.write("Series :" + series + "<br/>");
+
+//Q # 7
+document.write("<br/><br/>");
+var bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"]
+var user = prompt("Welcome to ABC Bakery what do you want to order sir/ma'am");
+var b = bakeryItems.indexOf(user);
+if (b < 0) {
+    alert("we are sorry " + user + " is not available in our bakery");
+} else {
+    alert(user + " is available at index " + b + " in our bakery");
+}
+
+//Q # 8
+document.write("<br/><br/>");
+var largest = [24, 53, 78, 91, 12];
+var largestNumber = 0;
+for (var i = 0; i < largest.length; i++) {
+    if (largestNumber <= largest[i])
+        largestNumber = largest[i];
+}
+document.write("<br/>Array Items : ".concat(largest));
+document.write("<br/>Largest Number is: " + largestNumber);
+
+//Q # 9
+document.write("<br/><br/>");
+var arr = [24, 53, 78, 91, 12];
+var max = Math.max.apply(Math, arr)
+var min = Math.min.apply(Math, arr)
+console.log(max, min)
+document.write(
+    "Array items: " + arr +
+    "<br/>Smallest Number is " + min + "<br/>"
+);
+
+//Q # 10
+document.write("<br/><br/>");
+for (var d = 1; d <= 100; d++) {
+    if (d % 5 === 0) {
+        document.write(d + " ,");
+    }
+}

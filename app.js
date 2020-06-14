@@ -267,7 +267,7 @@ if (numForTable === "") {
 //Q # 5
 var sub1 = prompt("Enter First Subject Name")
 var sub2 = prompt("Enter Second Subject Name")
-var sub3 = prompt("Enter Third SUbject Name")
+var sub3 = prompt("Enter Third Subject Name")
 var sub1Marks = prompt("Enter First Subject Marks")
 var a = Number(sub1Marks)
 var sub2Marks = prompt("Enter Second Subject Marks")
@@ -402,7 +402,7 @@ if (guess == userInput) {
 }
 
 //Q # 8
-var checkDivisibility = prompt("Enter any number to check whether it is even or odd");
+var checkDivisibility = prompt("Enter any number to check divisibility by 3");
 if (parseFloat(checkDivisibility) % 3 === 0) {
     alert("It is divisible by 3");
 } else {
@@ -410,7 +410,7 @@ if (parseFloat(checkDivisibility) % 3 === 0) {
 }
 
 //Q # 9
-var checkEven = prompt("Enter any number to check divisibility by 3");
+var checkEven = prompt("Enter any number to check whether it is even or odd");
 if (parseFloat(checkEven) % 2 === 0) {
     alert("The number is even");
 } else {
